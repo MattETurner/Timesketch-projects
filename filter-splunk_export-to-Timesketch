@@ -1,1 +1,1 @@
-| eval message=_raw | eval datetime=strftime(_time, "%Y-%m-%dT%H:%M:%:S%z") | eval timestamp_desc=EventID | table message datetime timestamp_desc 
+| eval message=_raw | eval datetime=strftime(_time, "%Y-%m-%dT%H:%M:%S%z") | eval timestamp_desc=EventID | table message datetime timestamp_desc 
